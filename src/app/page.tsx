@@ -21,7 +21,11 @@ export default function Home() {
         <Header onChatToggle={handleChatToggle} />
         <div style={{ display: 'flex', flex: 1, overflow: 'hidden' }}>
           <Sidebar activeView={activeView} setActiveView={setActiveView} />
-          <div className="bode-main" style={{ marginRight: isChatOpen ? '320px' : '0' }}>
+          <div className="bode-main" style={{ 
+            flex: 1,
+            marginRight: isChatOpen ? '380px' : '0',
+            transition: 'margin-right 0.3s ease-in-out'
+          }}>
             <Dashboard activeView={activeView} />
           </div>
         </div>

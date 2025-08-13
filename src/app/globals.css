@@ -186,10 +186,6 @@ html, body {
   transition: margin-right var(--dur-2) var(--ease-out), background var(--dur-2) var(--ease-out);
 }
 
-.bode-main.chat-open {
-  margin-right: 380px;
-}
-
 .bode-header {
   background: var(--ui-1);
   border-bottom: var(--border-1);
