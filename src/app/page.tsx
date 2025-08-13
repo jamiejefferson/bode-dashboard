@@ -19,9 +19,11 @@ export default function Home() {
     <AuthWrapper>
       <div className="bode-layout">
         <Header onChatToggle={handleChatToggle} />
-        <div className="bode-main" style={{ marginRight: isChatOpen ? '320px' : '0' }}>
+        <div style={{ display: 'flex', flex: 1, overflow: 'hidden' }}>
           <Sidebar activeView={activeView} setActiveView={setActiveView} />
-          <Dashboard activeView={activeView} />
+          <div className="bode-main" style={{ marginRight: isChatOpen ? '320px' : '0' }}>
+            <Dashboard activeView={activeView} />
+          </div>
         </div>
         <CollapsibleChatPanel 
           isOpen={isChatOpen} 

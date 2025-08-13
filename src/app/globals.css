@@ -155,6 +155,7 @@ html, body {
 /* ===== LAYOUT ===== */
 .bode-layout {
   display: flex;
+  flex-direction: column;
   height: 100vh;
   background: radial-gradient(1200px 600px at 20% 15%, var(--bg-1), var(--bg-3) 55%, var(--bg-4) 100%);
   overflow: hidden;
