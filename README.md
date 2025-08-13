@@ -1,36 +1,148 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Bode - AI-Powered Property Management Dashboard
 
-## Getting Started
+A modern, interactive dashboard for property management with AI assistance, drag-and-drop functionality, and real-time analytics.
 
-First, run the development server:
+## 🚀 Live Demo
 
+The dashboard is now live and password-protected for secure access.
+
+### Access Information:
+- **Demo Password**: `bode2024`
+- **Features**: Full dashboard with drag-and-drop cards, AI chat panel, and responsive design
+
+## ✨ Features
+
+### 🎯 Interactive Dashboard
+- **Drag & Drop Cards**: Reposition dashboard widgets with smooth animations
+- **Click to Enlarge**: Cards scale up when clicked for better viewing
+- **Masonry Layout**: Responsive grid that adapts to screen size
+- **Loading Animations**: Smooth entrance animations for all components
+
+### 🤖 AI Assistant
+- **Collapsible Chat Panel**: Right-side AI assistant panel
+- **Real-time Responses**: Simulated AI interactions
+- **Quick Actions**: Pre-built action buttons for common tasks
+
+### 🎨 Modern Design
+- **Host Grotesk Typography**: Professional font for headers and big stats
+- **Space Mono**: Monospace font for technical content
+- **Dark/Light Mode**: Toggle between themes
+- **Responsive Design**: Works on all device sizes
+
+### 🔐 Security
+- **Password Protection**: Simple authentication system
+- **Session Management**: Persistent login state
+- **Secure Headers**: Protection against common web vulnerabilities
+
+## 🛠️ Technology Stack
+
+- **Framework**: Next.js 15.4.6 with React 19
+- **Styling**: Custom CSS with CSS Variables
+- **Deployment**: Vercel
+- **Authentication**: Client-side with localStorage
+- **Animations**: CSS keyframes and transitions
+
+## 📊 Dashboard Cards
+
+### Core Metrics
+- Sales Statistics
+- Top Seller by Country
+- Top Sales Performance
+- Marketing Activities
+- Annual Profit
+
+### Property Management
+- Predictive Maintenance
+- Occupancy Trends
+- Maintenance by Category
+- Financial Health Snapshot
+- Energy Efficiency Insights
+
+### KPI Cards
+- Occupancy Rate
+- Maintenance Tickets
+- Average Rent
+- Tenant Satisfaction
+
+## 🚀 Deployment
+
+### Prerequisites
+- Node.js 18+ 
+- npm or yarn
+- Vercel account (for deployment)
+
+### Local Development
 ```bash
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Build for production
+npm run build
+
+# Start production server
+npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Deploy to Vercel
+1. Push your code to GitHub
+2. Connect your repository to Vercel
+3. Deploy automatically on push to main branch
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Environment Variables
+No environment variables required for basic functionality.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🔧 Customization
 
-## Learn More
+### Changing the Password
+Edit the password in `/src/app/login/page.tsx`:
+```typescript
+if (password === 'your-new-password') {
+  // Authentication logic
+}
+```
 
-To learn more about Next.js, take a look at the following resources:
+### Adding New Cards
+1. Add card data to the `cards` array in `/src/components/Dashboard.tsx`
+2. Follow the existing card structure with `id`, `type`, `minWidth`, and `content`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Modifying Colors
+Update CSS variables in `/src/app/globals.css`:
+```css
+:root {
+  --accent-green-1: #your-color;
+  --accent-green-2: #your-color;
+  /* ... other colors */
+}
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📱 Responsive Design
 
-## Deploy on Vercel
+The dashboard is fully responsive and works on:
+- Desktop (1200px+)
+- Tablet (768px - 1199px)
+- Mobile (320px - 767px)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🔒 Security Notes
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- This is a demo implementation with client-side authentication
+- For production use, implement proper server-side authentication
+- Consider adding rate limiting and additional security measures
+- The password is visible in the client-side code (for demo purposes)
+
+## 📄 License
+
+This project is for demonstration purposes. Feel free to use as a starting point for your own projects.
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Submit a pull request
+
+---
+
+**Demo Access**: Use password `bode2024` to access the live dashboard.

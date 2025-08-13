@@ -1,0 +1,43 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="20" cy="20" r="20" fill="#f8f9fa"/>
+  
+  <!-- Hair -->
+  <path d="M20 8C16 8 12 10 10 14C8 18 9 22 12 25C15 28 20 30 25 28C30 26 32 22 30 18C28 14 24 8 20 8Z" fill="#d63384"/>
+  
+  <!-- Face -->
+  <ellipse cx="20" cy="22" rx="8" ry="10" fill="#ffdbac"/>
+  
+  <!-- Eyes (closed from laughing) -->
+  <path d="M16 20C16 20 17 19 18 19C19 19 20 20 20 20" stroke="#2c1810" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+  <path d="M20 20C20 20 21 19 22 19C23 19 24 20 24 20" stroke="#2c1810" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+  
+  <!-- Eyebrows -->
+  <path d="M15 18C15 18 16 17 17 17C18 17 19 18 19 18" stroke="#d63384" stroke-width="1" stroke-linecap="round" fill="none"/>
+  <path d="M21 18C21 18 22 17 23 17C24 17 25 18 25 18" stroke="#d63384" stroke-width="1" stroke-linecap="round" fill="none"/>
+  
+  <!-- Nose (slightly scrunched) -->
+  <ellipse cx="20" cy="23" rx="1" ry="1.5" fill="#ffdbac"/>
+  
+  <!-- Mouth (wide smile) -->
+  <path d="M16 26C16 26 18 28 20 28C22 28 24 26 24 26" stroke="#d63384" stroke-width="2" stroke-linecap="round" fill="none"/>
+  
+  <!-- Freckles -->
+  <circle cx="18" cy="21" r="0.5" fill="#d4a574"/>
+  <circle cx="19" cy="22" r="0.5" fill="#d4a574"/>
+  <circle cx="20" cy="21" r="0.5" fill="#d4a574"/>
+  <circle cx="21" cy="22" r="0.5" fill="#d4a574"/>
+  <circle cx="22" cy="21" r="0.5" fill="#d4a574"/>
+  
+  <!-- Cheeks (flushed) -->
+  <circle cx="15" cy="24" r="2" fill="#ffb3ba" opacity="0.6"/>
+  <circle cx="25" cy="24" r="2" fill="#ffb3ba" opacity="0.6"/>
+  
+  <!-- Hair details -->
+  <path d="M12 12C12 12 14 10 16 10C18 10 20 12 20 12" stroke="#b02a37" stroke-width="1" stroke-linecap="round" fill="none"/>
+  <path d="M20 12C20 12 22 10 24 10C26 10 28 12 28 12" stroke="#b02a37" stroke-width="1" stroke-linecap="round" fill="none"/>
+  
+  <!-- Braid details -->
+  <path d="M14 15C14 15 15 16 16 16C17 16 18 15 18 15" stroke="#b02a37" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+  <path d="M22 15C22 15 23 16 24 16C25 16 26 15 26 15" stroke="#b02a37" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+</svg>
