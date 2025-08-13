@@ -31,11 +31,11 @@ export default function Sidebar({ activeView, setActiveView }: SidebarProps) {
   ];
 
   const navigationItems = [
-    { title: 'Dashboard', active: true },
-    { title: 'Properties', active: false },
-    { title: 'Tenants', active: false },
-    { title: 'Maintenance', active: false },
-    { title: 'Reports', active: false }
+    { id: 'dashboard', title: 'Dashboard', active: activeView === 'operator' },
+    { id: 'properties', title: 'Properties', active: false },
+    { id: 'tenants', title: 'Tenants', active: false },
+    { id: 'maintenance', title: 'Maintenance', active: false },
+    { id: 'reports', title: 'Reports', active: false }
   ];
 
   return (
@@ -72,6 +72,12 @@ export default function Sidebar({ activeView, setActiveView }: SidebarProps) {
           {navigationItems.map((item, index) => (
             <button
               key={index}
+              onClick={() => {
+                if (item.id === 'dashboard') {
+                  setActiveView('operator');
+                }
+                // Add other navigation handlers as needed
+              }}
               style={{
                 width: '100%',
                 padding: 'var(--space-2) var(--space-3)',
