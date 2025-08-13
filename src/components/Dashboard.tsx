@@ -251,7 +251,6 @@ export default function Dashboard({ activeView }: DashboardProps) {
   const [dragOverIndex, setDragOverIndex] = useState<number | null>(null);
   const [enlargedCard, setEnlargedCard] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(true);
-  const dragRef = useRef<HTMLDivElement>(null);
 
   // Simulate loading time for smooth animation
   useEffect(() => {

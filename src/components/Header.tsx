@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 interface HeaderProps {
   onChatToggle: () => void;
@@ -78,10 +79,11 @@ export default function Header({ onChatToggle }: HeaderProps) {
             e.currentTarget.style.transform = 'scale(1)';
           }}
           >
-            <img 
+            <Image 
               src="/person.png" 
               alt="Profile" 
-              style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+              width={40}
+              height={40}
             />
           </div>
         </div>
